@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.beijing{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+img{
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 2px 15px rgb(110, 14, 46);
+    object-fit: none;
+    margin-left: 40px;
+    margin-top: 90px;
+}
+img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px rgb(rgb(170, 0, 255), green, blue);
+}
+.wenzi{
+    position: relative;
+    left: 210px;
+    top: 80px;
+    font-size: 18px;
+    color:blue;
+    font-weight: 100px;
+}
+
+#yong_j{
+    height: 400px;
+    width: 700px;
+    display: none;
+}
+#liu_j{
+    height: 400px;
+    width: 700px;
+    display: none;
+}
+#tu_j{
+    height: 400px;
+    width: 700px;
+    display: none;
+}
+#xia_j{
+    height: 400px;
+    width: 700px;
+    display: none;
+}
+

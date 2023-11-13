@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image: url('登录界面背景.png');
+    background-size: cover;
+}
+.in-put{
+    padding: 5px;
+}
+.put{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+.anniu{
+    padding: 10px;
+}
+.forget{
+    position: relative;
+    left:100px;
+    top: -30px;
+    font-size: 16px;
+}
+#eye{
+    height:20px;
+    position: relative;
+    top:5px;
+    top: -23px;
+    left:200px;
+    display:none;
+}
+#eye_b{
+    height:20px;
+    position: relative;
+    top: -23px;
+    left:200px;
+    display:block;
+}
+.login{
+    position: relative;
+    left: 45%;
+    top: 45%;
+}
+.nav{
+    width: 150px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    position: fixed;
+    right: -150px;
+    top: 0;;
+    border-radius: 12px 0 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.nav li{
+    width: 150px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+}
+.nav a:hover{
+    background:#fc0
+}
+.nav a{
+    color:white;
+    /* display: block; */
+}
+#checkbox{
+    display: none;
+}
+label{
+    width:40px;
+    font-size: 40px;
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    transition:0.5s;
+}
+#checkbox:checked ~ .nav{
+    right:0px;
+}
+#checkbox:checked ~ .lable{
+    right:150px;
+}
+.menu li{
+    margin-top: 40px;
+}
+.avatar{
+    width: 100px;
+    position: relative;
+    right: -25px;
+    top: 30px;
+    border-radius:100%
+}
