@@ -37,3 +37,11 @@ button{
     height: 1600px;
     width: 300px;
 }
+.re{
+    width: 700px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    top: -180px;
+    left: 500px;
+}
