@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .beijing{
     display: flex;
@@ -27,13 +28,20 @@ img:hover{
     transform: scale(1.05);
     box-shadow: 2px 2px 15px rgb(rgb(170, 0, 255), green, blue);
 }
-.wenzi{
+.bo{
+    background: rgba(255, 255, 255, 0.2);
     position: relative;
     left: 210px;
     top: 80px;
+    overflow: hidden;
+    border-radius: 20px ;
+    backdrop-filter: blur(6px);
+} 
+.wenzi{
+    position: relative;
     font-size: 18px;
-    color:blue;
-    font-weight: 100px;
+    color:black;
+    /* font-weight: 100px; */
 }
 
 #yong_j{
