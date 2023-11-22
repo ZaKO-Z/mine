@@ -23,11 +23,7 @@ img{
     margin-left: 40px;
     margin-top: 90px;
 }
-img:hover{
-    opacity: 1;
-    transform: scale(1.05);
-    box-shadow: 2px 2px 15px rgb(rgb(170, 0, 255), green, blue);
-}
+
 .bo{
     background: rgba(255, 255, 255, 0.2);
     position: relative;

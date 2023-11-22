@@ -113,4 +113,6 @@ window.addEventListener('load', function () {
         //手动调用点击事件
         arrow_r.click();
     },2000)
+ 
+
 })

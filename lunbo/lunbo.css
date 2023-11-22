@@ -1,7 +1,17 @@
 /*清除元素默认的内外边距  */
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background-image: linear-gradient(to top left,
+    #91defe,
+    #99c0f9,
+    #bdb6ec,
+    #d7b3e3,
+    #efb3d5,
+    #f9bccc);
 }
 
 /*去掉列表前面的小点*/
@@ -34,8 +44,8 @@ a {
 }
 .focus {
     position: relative;
-    width: 800px;
-    height: 1369px;
+    width: 350px;
+    height: 500px;
     background-color: purple;
     overflow: hidden;
 }
@@ -87,6 +97,37 @@ a {
     background-color: #fff;
 }
 .w img{
-    width: 2560px;
-    height: 1369px;
+    width: 350px;
+    height: 500px;
+}
+.vidio{
+    position: relative;
+    left: 350px;
+    top: -460px;
+    /* background-color; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.vidio img{
+    width: 355px;
+    height: 200px;
+    margin-left: 10px;
+    margin-bottom: 45px;
+    border-radius: 12px;
+}
+.re{
+    position: relative;
+    top: -25px;
+    right: 350px;
+    font-weight: 1000;
+}
+.up{
+    position:relative;
+    top: -26px;
+    left: 15px;
+}
+img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px rgb(rgb(170, 0, 255), green, blue);
 }
