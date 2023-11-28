@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/recommend/re1.css">
+    <link rel="stylesheet" href="/lunbo/recommend/re1.css">
 </head>
 <body>
     <img src="/lunbo/img/b1.png" class="book">
@@ -15,6 +15,9 @@
         <br><span>类型：奇幻 日常 恋爱</span><br>
         <br><span>标签：TV 完结</span><br>
         <br><span>更新至 完结</span>
+    </div>
+    <div class="relative">
+        <span>相关推介</span>
     </div>
     <div class="button">
         <button>第一集</button>
@@ -35,10 +38,44 @@
         <button>第十六集</button>
         <button>第十七集</button>
     </div>
-    <div class="relative">
-        <span style="margin-left: 120px">相关推荐</span>
-        <img src="/b1.png" class="img"> 
-    </div>
+
     <div class="re"><span>内容介绍：富㭴勇太于初中毕业的时候，决定同时为自己举办中二病毕业的仪式。打算顺利度过高中生活的勇太，在开学日以最后的中二语录完全封锁这段黑历史。可惜天意弄人，勇太遇上了现任中二病患者暨同班同学小鸟游六花，更被六花看出中二病的残馀症状。六花于是以此威逼勇太与她“立下契约”。六花的行为举止惹来了勇太的不少同学、家人、甚至初中好友的注目，使勇太在享受现充生活时充满着难言之隐……</span></div>
+    <div class="recommend"> 
+        <img src="/lunbo/img/b1.png" class="image">
+        <img src="/lunbo/img/b1.png" class="image">
+        <img src="/lunbo/img/b1.png" class="image">
+    </div>
+
+    <!-- 播放器 -->
+   <div class="music">
+        <div class="cover">
+            <img src="/img/凸守.png">
+        </div>
+        <div class="info">
+            <div class="title">name</div>
+            <div class="singer">name</div>
+        </div>
+        <div class="volume-box"> 
+            <span class="volume-down"><i class="meterial-icons">remove</i> </span>
+            <input type="range" class="-range" step="1" value="80" min="0" max="100"
+            oninput="music.volume=this.value/100">
+            <span class="volume-up"><i class="meterial-icons">add</i></span>
+        </div>
+        <div class="btn-box">
+            <i class="matrrial-icons repeat" onclick="handleRepeat()">repeat</i> 
+            <i class="matrrial-icons repeat" onclick="handleRepeat()">favorite</i> 
+            <i class="matrrial-icons repeat" onclick="handleRepeat()">volume_up</i> 
+        </div>
+
+        <div class="mucic-box">
+            <input type="range" class="seekbar" step="1" value="0" min="0" max="10" oninput="handleSeekBar()">
+            <audio src="/lunbo/mucic/op1.mp3">
+            </audio>
+            <span class="duration">0:0</span>
+            <span class="play" onclick="handlePlay()">
+                <i class="matrrial-icons">play_array</i>
+            </span>
+        </div>
+   </div>
 </body>
 </html>

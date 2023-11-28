@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="登录.css">
+    <link rel="stylesheet" href="/zi-img/zititubiao/demo.css">
+    <link rel="stylesheet" href="/登录/登录.css">
 </head>
 <body>
     <div class="background">
         <div class="login">
             <div class="in-put">
-                <input type="text" placeholder="账号" class="put">
+                <input type="text" placeholder="用户名" class="put" id="input">
             </div>
             <div class="in-put">
                 <input type="password" placeholder="密码" class="put" id="password">
@@ -18,7 +19,7 @@
                 <img src="/img/眼睛_隐藏.png" id="eye_b">
             </div>
             <div class="anniu">
-                <a href="/登录/留言板/massage.html"><button>登录</button></a>
+                <button onclick="get()">登录</button>
                 <button>注册</button>
             </div>
             <div class="forget">
@@ -33,7 +34,7 @@
         <img src="/img/勇太.png" class="avatar"><br>
         <ul class="menu"> 
          <li><a href="#">切换头像</a></li>
-         <li><a href="#">探险者：小鸟游六花</a></li>
+         <li><a href="#">探险者：未登录</a></li>
          <li><a href="#">个人资料</a></li>
          <li><a href="#">探索日志</a></li>
          <li><a href="#">设置</a></li>

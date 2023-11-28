@@ -13,36 +13,52 @@ body{
     background-image: url('/img/登录界面背景.png');
     background-size: cover;
 }
+.login{
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    border-radius: 20px ;
+    backdrop-filter: blur(6px);
+    width: 256px;
+}
+input{
+    width: 400px;
+}
 .in-put{
     padding: 5px;
 }
 .put{
-    width: 200px;
-    height: 30px;
+    width: 220px;
+    height: 40px;
     border-radius: 10px;
 }
 .anniu{
     padding: 10px;
 }
+.anniu button{
+    width: 50px;
+    height: 30px;
+}
 .forget{
     position: relative;
-    left:100px;
-    top: -30px;
+    left: 150px;
+    top: -35px;
     font-size: 16px;
 }
 #eye{
     height:20px;
     position: relative;
     top:5px;
-    top: -23px;
-    left:200px;
+    top: -29px;
+    left: 222px;
     display:none;
 }
 #eye_b{
     height:20px;
     position: relative;
-    top: -23px;
-    left:200px;
+    top: -29px;
+    left: 220px;
     display:block;
 }
 .login{

@@ -3,7 +3,6 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    overflow: hidden;
 }
 
 body{
@@ -38,27 +37,42 @@ button{
     left: 500px;
     top: -200px;
 }
-.relative{
-    float: right;
-    position: relative;
-    top: -800px;
-    background-color: red;
-    height: 1600px;
-    width: 300px;
-    display: flex;
-}
 .re{
     width: 700px;
     height: 200px;
-    background-color: red;
     position: relative;
     top: -180px;
     left: 500px;
 }
-.img{
+.relative{
     position: relative;
-    top: 90px;
-    right:80px;
-    width: 300px;
-    height: 400px;
+    top: -600px;
+    right: -1500px;
+
+}
+.image{
+    width: 150px;
+    height: 200px;
+    position: relative;
+    top: -950px;
+    right: -1470px;
+    margin-bottom: 40px;
+}
+.recommend{
+    display: flex;
+    flex-direction: column;
+}
+.music{
+    position: relative;
+    top: -1700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #91defe; */
+    z-index: 99;
+    width: 330px;
+    height: 580px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px black;
+    border-top: 1px solid rgba(red, green, blue, alpha);
 }

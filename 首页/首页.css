@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 /* body{
     overflow: hidden;
@@ -62,6 +63,10 @@ nav ul li a {
 .content>a:hover{
     background-color:rgb(215, 200, 200);
 }
-video{
-    overflow: hidden;
+video {
+    width: 100%;
+    position: absolute;
+    filter: blur(3px);
+    top: 0;
+    left: 0;
 }
