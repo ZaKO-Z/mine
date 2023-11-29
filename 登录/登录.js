@@ -67,6 +67,4 @@ function get() {
     else{
         alert("账号或密码不能为空！");
     }
-            
-
 }

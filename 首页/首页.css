@@ -10,7 +10,6 @@
 nav .logo {
     width: 80px;
 }
-
 nav {
     width: 100%;
     position: absolute;
@@ -20,7 +19,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 nav ul li {

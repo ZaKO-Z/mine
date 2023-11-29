@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/lunbo/recommend/re1.css">
+    <link rel="stylesheet" href="/lunbo/recommend/re3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <img src="/lunbo/img/b3.png" class="book">
     <div class="jianjie">
-        <span style="font-style: oblique;">中二病也要谈恋爱-恋！</span><br>
+        <span style="font-style: oblique;">中二病也要谈恋爱！恋</span><br>
         <br><span style="font-style: unset;">别名：</span><br>
         <br><span>上映</span> <span>地区：日本</span><br>
         <br><span>类型：奇幻 日常 恋爱</span><br>
@@ -18,6 +19,11 @@
     </div>
     <div class="relative">
         <span>相关推介</span>
+    </div>
+    <div class="recommend"> 
+        <img src="/lunbo/img/re7.png" class="image">
+        <img src="/lunbo/img/re8.png" class="image">
+        <img src="/lunbo/img/re9.png" class="image">
     </div>
     <div class="button">
         <button>第一集</button>
@@ -39,18 +45,43 @@
         <button>第十七集</button>
     </div>
 
-    <div class="re"><span>由于各种原因导致失去住所的六花开始寻找新家，但过程并不顺利，最终来到了勇太的家里
-        然而，勇太的家人却留下勇太一个人到雅加达去了。
-        现在开始的同栖生活! ? 这样想着心跳不已的两个人。
-        但此时樟叶为了迎考而回到了家中。不知应该感到安心还是遗憾，3人开始了奇妙的共同生活
-        另一方面，原小乌游家搬进了新的住户
-        那是以前勇太曾经憧憬的，自称为魔法魔王少女、索非亚琳·SP·撒旦7世的七宫智音......
-        如此这般，仍然完全称不上普通的、勇太的高二第一学期开始了。</span></div>
-    <div class="recommend"> 
-        <img src="/lunbo/img/b1.png" class="image">
-        <img src="/lunbo/img/b1.png" class="image">
-        <img src="/lunbo/img/b1.png" class="image">
-    </div>
+    <div class="re"><span>内容介绍：由于各种原因导致失去住所的六花开始寻找新家，但过程并不顺利，最终来到了勇太的家里。然而，勇太的家人却留下勇太一个人到雅加达去了。现在开始的同栖生活！？这样想着心跳不已的两个人。但此时樟叶为了迎考而回到了家中。另一方面，原小鸟游家搬进了新的住户。那是以前勇太曾经憧憬的，自称为魔法魔王少女、索非亚琳·SP·撒旦7世的七宫智音……</span></div>
+   
 
+    <!-- 播放器 -->
+    <div class="shell">
+        <div class="cover">
+            <img src="/lunbo/img/op3.png" alt="">
+        </div>
+        <div class="info">
+            <div class="title">VOICE</div>
+            <div class="singer">ZAQ</div>
+        </div>
+        <div class="volume-box">
+            <span class="volume-down"><i class="material-icons">remove</i></span>
+            <input type="range" class="volume-range" step="1" value="80" min="0" max="100"
+                oninput="music.volume = this.value/100">
+            <span class="volume-up"><i class="material-icons">add</i></span>
+        </div>
+        <div class="btn-box">
+            <i class="material-icons repeat" onclick="handleRepeat()">repeat</i>
+            <i class="material-icons favorite active" onclick="handleFavorite()">favorite</i>
+            <i class="material-icons volume" onclick="handleVolume()">volume_up</i>
+        </div>
+        <div class="music-box">
+            <input type="range" class="seekbar" step="1" value="0" min="0" max="100" oninput="handleSeekBar()">
+            <audio class="music-element">
+                <source src="/lunbo/mucic/op3.mp3">
+            </audio>
+            <span class="current-time">0:0</span><span class="duration">0:0</span>
+            <span class="play" onclick="handlePlay()">
+                <i class="material-icons">play_arrow</i>
+            </span>
+        </div>
+    </div>
+    <div class="next">
+        <a href="/lunbo/recommend/re4.html"><img src="/lunbo/img/next.jpeg"></a>
+    </div>
+   <script src="/lunbo/recommend/music.js"></script>
 </body>
 </html>

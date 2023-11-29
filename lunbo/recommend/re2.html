@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/lunbo/recommend/re1.css">
+    <link rel="stylesheet" href="/lunbo/recommend/re2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <img src="/lunbo/img/b2.png" class="book">
@@ -18,6 +19,11 @@
     </div>
     <div class="relative">
         <span>相关推介</span>
+    </div>
+    <div class="recommend"> 
+        <img src="/lunbo/img/re4.png" class="image">
+        <img src="/lunbo/img/re5.png" class="image">
+        <img src="/lunbo/img/re6.png" class="image">
     </div>
     <div class="button">
         <button>第一集</button>
@@ -39,15 +45,43 @@
         <button>第十七集</button>
     </div>
 
-    <div class="re"><span>2012年底开始连载的SP小品剧集，大约每个月出一集。人物启用《中二病也要谈恋爱》TV版的原
-        班人马，第1集登场的角色有六花和早苗
-        《DEPTH OF FIELD》的编剧不再是《中二病》TV版的花田十辉，而是由监督石原立也和剧组各人员共同
-        完成。</span></div>
-    <div class="recommend"> 
-        <img src="/lunbo/img/b1.png" class="image">
-        <img src="/lunbo/img/b1.png" class="image">
-        <img src="/lunbo/img/b1.png" class="image">
-    </div>
+    <div class="re"><span>内容介绍：2012年底开始连载的SP小品剧集，大约每个月出一集。人物启用《中二病也要谈恋爱》TV版的原班人马，第1集登场的角色有六花和早苗。《DEPTH OF FIELD》的编剧不再是《中二病》TV版的花田十辉，而是由监督石原立也和剧组各人员共同完成。</span></div>
+   
 
+    <!-- 播放器 -->
+    <div class="shell">
+        <div class="cover">
+            <img src="/lunbo/img/op2.png" alt="">
+        </div>
+        <div class="info">
+            <div class="title">深淵に舞う戦慄謝肉祭</div>
+            <div class="singer">ZAQ</div>
+        </div>
+        <div class="volume-box">
+            <span class="volume-down"><i class="material-icons">remove</i></span>
+            <input type="range" class="volume-range" step="1" value="80" min="0" max="100"
+                oninput="music.volume = this.value/100">
+            <span class="volume-up"><i class="material-icons">add</i></span>
+        </div>
+        <div class="btn-box">
+            <i class="material-icons repeat" onclick="handleRepeat()">repeat</i>
+            <i class="material-icons favorite active" onclick="handleFavorite()">favorite</i>
+            <i class="material-icons volume" onclick="handleVolume()">volume_up</i>
+        </div>
+        <div class="music-box">
+            <input type="range" class="seekbar" step="1" value="0" min="0" max="100" oninput="handleSeekBar()">
+            <audio class="music-element">
+                <source src="/lunbo/mucic/op2.mp3">
+            </audio>
+            <span class="current-time">0:0</span><span class="duration">0:0</span>
+            <span class="play" onclick="handlePlay()">
+                <i class="material-icons">play_arrow</i>
+            </span>
+        </div>
+    </div>
+    <div class="next">
+        <a href="/lunbo/recommend/re3.html"><img src="/lunbo/img/next.jpeg"></a>
+    </div>
+   <script src="/lunbo/recommend/music.js"></script>
 </body>
 </html>

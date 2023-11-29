@@ -85,7 +85,7 @@ button {
 
 .shell {
     position: relative;
-    top: -1920px;
+    top: -1950px;
     z-index: 99;
     width: 330px;
     height: 580px;
@@ -302,7 +302,7 @@ video {
     width: 300px;
     height: 150px;
     position: relative;
-    top: -1875px;
+    top: -1900px;
     border-radius: 15px;
     /* background-color: #fff6e7; */
     box-shadow: 0 10px 30px #00000085;
